@@ -2,8 +2,8 @@
   "name": "vscode-resplendence",
   "displayName": "vscode-resplendence",
   "description": "Syntax highlighting for resplendence",
-  "version": "0.0.25",
-  "publisher": "strangerelics",
+  "version": "1.0.0",
+  "publisher": "Clarity Hanna",
   "icon": "logo.png",
   "license": "MIT",
   "repository": {
