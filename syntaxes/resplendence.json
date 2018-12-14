@@ -1,0 +1,66 @@
+{
+  "fileTypes": ["js", "jsx", "ts", "tsx", "vue"],
+  "injectionSelector": "L:source -comment -string",
+  "patterns": [
+    {
+      "contentName": "source.css.scss",
+      "begin": "\\b(rx)(`)",
+      "beginCaptures": {
+        "1": {
+          "name": "meta.function-call.js entity.name.function.js"
+        },
+        "2": {
+          "name": "string.template.js punctuation.definition.string.template.begin.js"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "string.template.js punctuation.definition.string.template.end.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.scss"
+        }
+      ]
+    },
+    {
+      "contentName": "source.css.scss",
+      "begin": "\\b(rx)((\\()(.*)(\\)))(`)",
+      "beginCaptures": {
+        "1": {
+          "name": "meta.function-call.js entity.name.function.js"
+        },
+        "3": {
+          "name": "meta.brace.round.js"
+        },
+        "4": {
+          "patterns": [
+            {
+              "include": "source.js"
+            }
+          ]
+        },
+        "5": {
+          "name": "meta.brace.round.js"
+        },
+        "6": {
+          "name": "string.template.js punctuation.definition.string.template.begin.js"
+        }
+      },
+      "end": "`",
+      "endCaptures": {
+        "0": {
+          "name": "string.template.js punctuation.definition.string.template.end.js"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.css.rx"
+        }
+      ]
+    }
+  ],
+  "scopeName": "rx"
+}
