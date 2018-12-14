@@ -3,8 +3,7 @@
   "displayName": "vscode-resplendence",
   "description": "Syntax highlighting for resplendence",
   "version": "1.0.0",
-  "publisher": "Clarity Hanna",
-  "icon": "logo.png",
+  "publisher": "strangerelics",
   "license": "MIT",
   "repository": {
     "type": "git",

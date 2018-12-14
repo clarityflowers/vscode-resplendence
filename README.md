@@ -14,12 +14,12 @@ ext install vscode-resplendence
 
 It should be the top result.
 
-[[Source](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)]
+[[Source](https://marketplace.visualstudio.com/items?itemName=strangerelics.vscode-resplendence)]
 
 ## Features
 
-- Syntax highlighting for styled components in JavaScript and TypeScript.
-- Detailed CSS IntelliSense while working in styled strings.
+- Syntax highlighting for resplendence in JavaScript and TypeScript.
+- Detailed CSS IntelliSense while working in resplendent strings.
 - Syntax error reporting.
 
 > **❗Important**: IntelliSense and language support requires VS Code 1.20+.
